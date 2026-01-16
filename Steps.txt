@@ -28,8 +28,11 @@ Step-2  cd Application-Tracking-System
 Step-3 Set Up a Virtual Environment
  python3 -m venv venv
  source venv/bin/activate
+pip install streamlit
+
 
 Step-4 Install Project Dependencies
+ pip install streamlit
  pip install --upgrade pip
  pip install -r requirements.txt
  pip install google-generativeai
