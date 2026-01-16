@@ -1,29 +1,100 @@
-# Application-Tracking-System
-A resume screening application that analyzes resumes against job descriptions, provides match scores, highlights strengths and gaps, and offers actionable suggestions along with pros, cons, and recommended changes to improve resume quality and ATS compatibility
+# Application Tracking System (ATS Resume Analyzer)
 
-Features
-Upload PDF Resume: Users can upload their resume in PDF format.
-Input Job Description: Users can input the job description in a text area.
-Tell Me About the Resume: Provides an evaluation of the candidate's profile against the job description, highlighting strengths and weaknesses.
-Get Keywords: Identifies specific skills and keywords necessary for the resume to have maximum impact, provided in JSON format.
-Percentage Match: Evaluates the percentage match of the resume with the job description, along with keywords missing and final thoughts.
+A resume screening application that analyzes resumes against job descriptions to determine relevance, ATS compatibility, and improvement areas. The system generates match scores, highlights strengths and gaps, extracts critical keywords, and provides actionable recommendations to improve resume quality.
 
-Installation
-Clone the repository:
+---
 
-git clone 
+## Features
 
-Install the required dependencies:
+* **Upload PDF Resume**
+  Upload candidate resumes in PDF format for analysis.
+
+* **Input Job Description**
+  Paste the target job description into the application for comparison.
+
+* **Resume Evaluation**
+  Analyzes the resume against the job description and highlights strengths, weaknesses, and alignment issues.
+
+* **Keyword Extraction**
+  Identifies important skills and keywords required for maximum ATS impact. Output is provided in JSON format.
+
+* **Percentage Match**
+  Calculates an overall match percentage between the resume and job description, lists missing keywords, and provides final recommendations.
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd Application-Tracking-System
+```
+
+### 2. Install Dependencies
+
+Ensure Python 3.8+ is installed, then run:
+
+```bash
 pip install -r requirements.txt
-Run the Streamlit app:
+```
 
+> **Note:** `pdf2image` requires Poppler to be installed on your system.
+>
+> * **Ubuntu/Debian:** `sudo apt install poppler-utils`
+> * **Windows:** Download Poppler and add it to the system PATH
+
+### 3. Run the Application
+
+```bash
 streamlit run app.py
-Usage
-Open the Streamlit app in your browser. Input the job description in the text area provided. Upload the PDF resume using the "Upload your resume(PDF)..." button. Click on the desired action buttons to perform various analyses.
+```
 
-Technologies Used
-AWS EC2 Instance 
-Python
-Streamlit
-pdf2image (Poopler)
-Google Gemini API
+---
+
+## Usage
+
+1. Launch the Streamlit application in your browser.
+2. Paste the job description into the provided text area.
+3. Upload the resume using the **Upload your resume (PDF)** option.
+4. Click the required action buttons to:
+
+   * Evaluate the resume
+   * Extract keywords
+   * View percentage match and improvement suggestions
+
+---
+
+## Technologies Used
+
+* **AWS EC2** – Application hosting
+* **Python** – Core application logic
+* **Streamlit** – User interface
+* **pdf2image** (Poppler) – PDF processing
+* **Google Gemini API** – Resume and job description analysis
+
+---
+
+## Output Overview
+
+* Resume strengths and weaknesses
+* ATS compatibility insights
+* Missing and recommended keywords
+* Match percentage score
+* Actionable suggestions with pros and cons
+
+---
+
+## Future Enhancements (Optional)
+
+* Support for DOCX resumes
+* Multi-job comparison
+* Resume version tracking
+* Export analysis as PDF/JSON
+
+---
+
+## License
+
+This project is intended for educational and personal use. Add a license file if you plan to distribute or commercialize the application.
