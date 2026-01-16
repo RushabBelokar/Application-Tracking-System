@@ -28,7 +28,7 @@ A resume screening application that analyzes resumes against job descriptions to
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/RushabBelokar/Application-Tracking-System
 cd Application-Tracking-System
 ```
 
