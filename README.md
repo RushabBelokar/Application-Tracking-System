@@ -7,11 +7,13 @@ Input Job Description: Users can input the job description in a text area.
 Tell Me About the Resume: Provides an evaluation of the candidate's profile against the job description, highlighting strengths and weaknesses.
 Get Keywords: Identifies specific skills and keywords necessary for the resume to have maximum impact, provided in JSON format.
 Percentage Match: Evaluates the percentage match of the resume with the job description, along with keywords missing and final thoughts.
+
 Installation
 Clone the repository:
-git clone 
-Install the required dependencies:
 
+git clone 
+
+Install the required dependencies:
 pip install -r requirements.txt
 Run the Streamlit app:
 
